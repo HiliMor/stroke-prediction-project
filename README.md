@@ -75,6 +75,8 @@ Following the original submission, the project was expanded using Python for cod
    git clone https://github.com/HiliMor/stroke-prediction-project.git
    cd stroke-prediction-project
 
+   ```
+
 2. Download the dataset from Kaggle and place it inside the data/ folder.
 
 3. Open the Jupyter notebook:
@@ -85,3 +87,13 @@ Following the original submission, the project was expanded using Python for cod
 ## 🎓 Author Note
 
 This project was originally submitted as part of a university course in Data Mining, and then extended into a full analytical project using modern Python tools for portfolio and learning purposes.
+
+## 🧩 Note on WEKA vs Python Results
+
+The WEKA models achieved significantly higher accuracy and recall. This is likely due to differences in how class balancing (SMOTE) and evaluation were applied:
+
+- In WEKA, SMOTE was applied to the entire dataset before training and evaluation, which may have led to **data leakage**.
+- In the Python workflow, the data was first split into training and test sets, and **SMOTE was applied only to the training data** — following standard best practices.
+- This makes the Python results more conservative but also **more realistic and reliable**.
+
+The comparison illustrates how evaluation methodology impacts model results — a key lesson in applied machine learning.
