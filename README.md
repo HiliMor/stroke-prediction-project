@@ -4,6 +4,8 @@ This project explores stroke risk prediction based on medical and demographic fe
 
 The project began as an academic exercise using [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and was later extended in Python using scikit-learn and Keras for improved control and flexibility.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HiliMor/stroke-prediction-project/blob/main/notebooks/stroke_prediction_full_analysis.ipynb)
+
 ---
 
 ## 📊 Dataset
@@ -69,14 +71,14 @@ Following the original submission, the project was expanded using Python for cod
 
 1. Clone this repository:
 
-   bash
+   ```bash
    git clone https://github.com/HiliMor/stroke-prediction-project.git
    cd stroke-prediction-project
 
 2. Download the dataset from Kaggle and place it inside the data/ folder.
 
 3. Open the Jupyter notebook:
-   notebooks/stroke_prediction_decision_tree.ipynb
+   notebooks/stroke_prediction_full_analysis.ipynb
 
 ---
 
